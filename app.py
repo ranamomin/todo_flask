@@ -33,6 +33,10 @@ def hello_world():
 
     return render_template("index.html",allTodo=allTodo)
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 @app.route("/update/<int:sno>", methods=["GET","POST"])
 def update(sno):
