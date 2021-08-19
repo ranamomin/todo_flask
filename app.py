@@ -50,7 +50,7 @@ def update(sno):
         todo.desc = desc
         db.session.add(todo)
         db.session.commit()
-        return redirect("https://8000-maroon-cricket-man69zq0.ws-us14.gitpod.io/")
+        return redirect("https://todo-flask-momin.herokuapp.com/")
 
     todo = Todo.query.filter_by(sno=sno).first()
 
@@ -62,7 +62,7 @@ def delete(sno):
     db.session.delete(del_Todo)
     db.session.commit()
     # return redirect("/")
-    return redirect("https://8000-maroon-cricket-man69zq0.ws-us14.gitpod.io/")
+    return redirect("https://todo-flask-momin.herokuapp.com/")
 
 
 if __name__ == "__main__":
